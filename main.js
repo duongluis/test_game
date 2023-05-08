@@ -104,14 +104,14 @@ document.onkeydown = function(event) {
             cha_test.speed=-cha_test.max_speed
             cha_test.move_width()
             break; 
-        case'ArrowUp' :
-            cha_test.speed=-cha_test.max_speed
-            cha_test.move_height()
-            break;   
-        case'ArrowDown' :
-            cha_test.speed=cha_test.max_speed
-            cha_test.move_height()
-            break;
+        // case'ArrowUp' :
+        //     cha_test.speed=-cha_test.max_speed
+        //     cha_test.move_height()
+        //     break;   
+        // case'ArrowDown' :
+        //     cha_test.speed=cha_test.max_speed
+        //     cha_test.move_height()
+        //     break;
     }
 }
 
