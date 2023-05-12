@@ -91,7 +91,7 @@ var cha_1 = new Character(50,50,50,50,'white',0)
 
 var cha_2 = new Character(100,100,50,50,'white',0)
 
-var goal = new Character((width-50)-10,0,10,height,'red',0)
+var goal = new Character(width-10,0,10,height,'red',0)
 
 
 document.onkeydown = function(event) {
