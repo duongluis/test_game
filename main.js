@@ -59,26 +59,26 @@ function getRandomIntInclusive(min, max) {
   }
 
 var enemy = [
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',4),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',4),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',4),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',4),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',4),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',5),
-    new Character(Math.floor(Math.random() * ((width-50)-50)+30),getRandomIntInclusive(0,height-20),10,10,'black',6),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',4),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',4),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',4),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',4),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',4),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',5),
+    new Character(Math.floor(Math.random() * ((width-50)-50)+50),getRandomIntInclusive(0,height-20),10,10,'black',6),
     
 
     // new Character(600,height - 10 ,10,10,'black',7),
@@ -93,6 +93,7 @@ var cha_2 = new Character(100,100,50,50,'white',0)
 
 var goal = new Character(width-10,0,10,height,'red',0)
 
+var start = new Character(40,0,10,height,'green',0)
 
 document.onkeydown = function(event) {
     switch(event.key){
@@ -176,6 +177,7 @@ var step = function() {
     clear()
     draw(cha_test)
     draw(goal)
+    draw(start)
     update_canvas()
     draw_enemy()
     
