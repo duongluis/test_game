@@ -144,31 +144,31 @@ var img ={}
 
 var upload_img = function() {
     img.cha_test = new Image();
-    img.cha_test.src = "image/player.png";
+    img.cha_test.src = "player.png";
 
     img.goal = new Image();
-    img.goal.src = "image/finish.png";
+    img.goal.src = "finish.png";
 
     img.enemy_1 = new Image();
-    img.enemy_1.src = "image/icon.png";
+    img.enemy_1.src = "icon.png";
 
     img.enemy_2 = new Image();
-    img.enemy_2.src = "image/G.png";
+    img.enemy_2.src = "G.png";
 
     img.enemy_3 = new Image();
-    img.enemy_3.src = "image/A.png";
+    img.enemy_3.src = "A.png";
 
     img.enemy_4 = new Image();
-    img.enemy_4.src = "image/M.png";
+    img.enemy_4.src = "M.png";
 
     img.enemy_5 = new Image();
-    img.enemy_5.src = "image/O.png";
+    img.enemy_5.src = "O.png";
 
     img.enemy_6 = new Image();
-    img.enemy_6.src = "image/T.png";
+    img.enemy_6.src = "T.png";
 
     img.enemy_7 = new Image();
-    img.enemy_7.src = "image/A (2).png";
+    img.enemy_7.src = "A (2).png";
 
 }
 
