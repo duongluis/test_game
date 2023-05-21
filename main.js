@@ -150,7 +150,7 @@ var upload_img = function() {
     img.goal.src = "finish.png";
 
     img.enemy_1 = new Image();
-    img.enemy_1.src = "icon.png";
+    img.enemy_1.src = "player.png";
 
     img.enemy_2 = new Image();
     img.enemy_2.src = "G.png";
